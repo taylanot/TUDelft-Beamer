@@ -28,7 +28,7 @@
 \renewcommand{\bibfont}{\normalfont\scriptsize}
 \setbeamerfont{footnote}{size=\tiny}
 \renewcommand{\cite}[1]{\footnote<.->[frame]{\fullcite{#1}}}
-
+\setbeamertemplate{bibliography item}{}
 
 \title[]{TITLE}
 \institute[]{Delft University of Technology, The Netherlands}
@@ -61,6 +61,11 @@ This is the first frame. \@author{}
 \item item 2
 \end{itemize}
 \end{block}
+\end{frame}
+
+\section{References}
+\begin{frame}
+	\printbibliography
 \end{frame}
 
 \end{document}
